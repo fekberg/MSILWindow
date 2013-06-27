@@ -13,4 +13,4 @@ The MSIL is analyzed each time you build your solution.
 ## In Action
 Watch the following YouTube video to see how it works: http://www.youtube.com/watch?v=63JDR_SUgNY
 
-[![ScreenShot](https://github.com/fekberg/MSILWindow/tree/master/Misc/Screenshot.png)]
+![ScreenShot](https://github.com/fekberg/MSILWindow/blob/master/Misc/Screenshot.png?raw=true)
