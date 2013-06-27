@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MSILWindow</name>
+    </assembly>
+    <members>
+        <member name="T:MSILWindow.Connect">
+            <summary>The object for implementing an Add-in.</summary>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:MSILWindow.Connect.#ctor">
+            <summary>Implements the constructor for the Add-in object. Place your initialization code within this method.</summary>
+        </member>
+        <member name="M:MSILWindow.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
+            <param term='application'>Root object of the host application.</param>
+            <param term='connectMode'>Describes how the Add-in is being loaded.</param>
+            <param term='addInInst'>Object representing this Add-in.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:ILInstruction.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:ILInstruction.RawData">
+            <summary>
+            Gets the raw data.
+            </summary>
+        </member>
+        <member name="P:ILInstruction.Data">
+            <summary>
+            Gets the data.
+            </summary>
+        </member>
+        <member name="P:ILInstruction.Address">
+            <summary>
+            Gets the address of the instruction.
+            </summary>
+        </member>
+        <member name="P:ILInstruction.InstructionIndex">
+            <summary>
+            Gets the index of the instruction.
+            </summary>
+            <value>
+            The index of the instruction.
+            </value>
+        </member>
+        <member name="P:ILInstruction.DataValue">
+            <summary>
+            Gets the value as integer
+            </summary>
+            <value>The data value.</value>
+        </member>
+        <member name="P:ILInstruction.Length">
+            <summary>
+            Gets the length of the instructions and operands.
+            </summary>
+            <value>The length.</value>
+        </member>
+        <member name="T:ILReader">
+            <summary>
+            Reads IL instructions from a byte stream.
+            </summary>
+            <remarks>Allows generated code to be viewed without debugger or enabled debug assemblies.</remarks>
+        </member>
+        <member name="F:ILReader.instructionLookup">
+            <summary>
+            The _instruction lookup.
+            </summary>
+        </member>
+        <member name="F:ILReader.intermediateLanguageProvider">
+            <summary>
+            The IL reader provider.
+            </summary>
+        </member>
+        <member name="M:ILReader.#ctor(System.Reflection.MethodInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ILReader"/> class.
+            </summary>
+            <param name="method">
+            The method.
+            </param>
+        </member>
+        <member name="M:ILReader.CreateILReaderProvider(System.Reflection.MethodInfo)">
+            <summary>
+            Creates the IL reader provider.
+            </summary>
+            <param name="methodInfo">The MethodInfo object that represents the method to read..</param>
+            <returns>
+            The ILReader provider.
+            </returns>
+        </member>
+        <member name="M:ILReader.IsInstructionPrefix(System.Int16)">
+            <summary>
+            Checks to see if the IL instruction is a prefix indicating the length of the instruction is two bytes long.
+            </summary>
+            <param name="value">The IL instruction as a byte.</param>
+            <remarks>IL instructions can either be 1 or 2 bytes.</remarks>
+            <returns>True if this IL instruction is a prefix indicating the instruction is two bytes long.</returns>
+        </member>
+        <member name="M:ILReader.GetLookupTable">
+            <summary>
+            The get lookup table.
+            </summary>
+            <returns>
+            A dictionary of IL instructions.
+            </returns>
+        </member>
+        <member name="M:ILReader.GetSize(System.Reflection.Emit.OperandType)">
+            <summary>
+            Gets the size of a operand.
+            </summary>
+            <param name="operandType">Defines the type of operand.</param>
+            <returns>The size in bytes of the operand type.</returns>
+        </member>
+        <member name="P:ILReader.Instructions">
+            <summary>
+            Gets the instructions.
+            </summary>
+            <value>The instructions.</value>
+        </member>
+    </members>
+</doc>
