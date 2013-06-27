@@ -11,5 +11,6 @@ The MSIL is analyzed each time you build your solution.
 3. Build & Run
 
 ## In Action
-Watch the following YouTube video to see how it works
-<iframe width="420" height="315" src="//www.youtube.com/embed/63JDR_SUgNY" frameborder="0" allowfullscreen></iframe>
+Watch the following YouTube video to see how it works: http://www.youtube.com/watch?v=63JDR_SUgNY
+
+[![ScreenShot](https://github.com/fekberg/MSILWindow/tree/master/Misc/Screenshot.png)]
